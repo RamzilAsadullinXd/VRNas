@@ -1,0 +1,26 @@
+@use '../helpers' as *;
+
+.hero {
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: rem(42);
+    }
+
+    &__body {
+        max-width: rem(540);
+    }
+
+    &__subtitle {
+        margin-top: rem(12);
+        margin-bottom: rem(32);
+    }
+
+}

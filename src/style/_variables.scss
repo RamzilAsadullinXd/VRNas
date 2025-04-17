@@ -1,0 +1,29 @@
+@use 'helpers' as *;
+
+:root {
+    --color-accent: linear-gradient(90deg, #0CBAF1, #E95CE9);
+    --color-purple: #CA6AEB;
+    --color-blue: #19B5F1;
+
+    --color-light: #FFFFFF;
+
+    --color-gray-light: #D1D1D1;
+    --color-gray-dark: #B0B0B2;
+
+    --color-dark: #18181B;
+    --color-dark-blue: #252532;
+
+
+    --color-green: #00C566;
+    --color-red: #FF4747;
+    --color-yellow: #FACC15;
+
+    --font-family-base: 'Chakra Petch', sans-serif; 
+
+    --container-width: #{rem(1200)};
+    --container-padding-x: #{rem(16)};
+
+    --border: #{rem(1)} solid #FFFFFF59;
+
+    --transition-duration: 0.2s;
+}

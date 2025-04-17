@@ -1,0 +1,96 @@
+@use 'helpers' as *;
+
+html {
+    &.is-lock {
+        overflow: hidden;
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family-base);
+    font-size: rem(14);
+    font-weight: 400;
+    color: var(--color-gray-light);
+    background-color: var(--color-dark);
+    line-height: rem(28);
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    color: var(--color-light);
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    line-height: normal;
+}
+
+h1, .h1 {
+    @include fluid-text(64, 48);
+}
+
+h2, .h2 {
+    @include fluid-text(48, 32);
+
+    line-height: rem(58);
+}
+
+h3, .h3 {
+    @include fluid-text(40, 28);
+
+    line-height: rem(58);
+}
+
+h4, .h4 {
+    @include fluid-text(36, 20);
+
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: rem(44);
+}
+
+h5, .h5 {
+    @include fluid-text(32, 20);
+}
+
+h6, .h6 {
+    font-size: rem(20);
+}
+
+.subtitle {
+    color: var(--color-gray-light);
+    font-size: rem(16);
+    font-weight: 300;
+}
+
+.description {
+    color: var(--color-gray-dark);
+}
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+    transition-duration: var(--transition-duration);
+}
+
+a {
+    color: var(--color-light);
+
+    &[class] {
+        text-decoration: none;
+    }
+}
+
+:focus-visible {
+    outline: rem(2) dashed var(--color-light);
+    outline-offset: rem(4);
+    transition-duration: 0s !important;
+}

@@ -1,0 +1,93 @@
+@use '../helpers' as *;
+
+.header {
+    padding-block: rem(31);
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 1rem;
+    }
+
+    &__overlay {
+        transition-duration: var(--transition-duration);
+
+        @include tablet-above {
+            display: contents;
+        }
+
+        @include tablet {
+            position: fixed;
+            inset: 0;
+            padding: 1rem;
+            background-color: var(--color-dark-blue);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            row-gap: rem(40);
+            overflow-y: auto;
+            z-index: 8;
+
+            &:not(.is-active) {
+                @include hide;
+
+                translate: 100%;
+            }
+        }
+    }
+
+    &__menu {
+        &-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: rem(64);
+
+            @include laptop {
+                column-gap: rem(32);
+            }
+
+            @include tablet {
+                flex-direction: column;
+                row-gap: rem(30);
+            }
+        }
+
+        &-item {
+            &:has(.select) {
+                @include tablet {
+                    margin-left: rem(32);
+                }
+            }
+        }
+        
+        &-link {
+            font-size: rem(16);
+            font-weight: 300;
+
+            &.is-active {
+                font-weight: 500;
+                pointer-events: none;
+            }
+
+            @include hover {
+                color: rgba(255, 255, 255, 0.7);
+            }
+        }
+    }
+
+    &__button {
+        width: rem(126);
+        height: rem(52);
+        background-color: transparent;
+        font-size: rem(16);
+        font-weight: 300;
+        letter-spacing: normal;
+
+        @include tablet {
+            width: rem(180);
+        }
+    }
+}

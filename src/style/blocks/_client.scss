@@ -1,0 +1,28 @@
+@use '../helpers' as *;
+
+.client {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: rem(280);
+        column-gap: rem(18);
+    }
+
+    &__images {
+        @include square(rem(50));
+
+        display: flex;
+        column-gap: rem(-70);
+    }
+
+    &__img {
+        &:not(:first-child) {
+            margin-left: -11px;
+        }
+    }
+}
