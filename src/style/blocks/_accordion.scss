@@ -1,0 +1,40 @@
+@use '../helpers' as *;
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(50);
+
+    &__item.is-active {
+        .accordion__title {
+            &::after {
+                rotate: -180deg;
+            }
+        }
+    }
+
+    &__header {
+        position: relative;
+        padding-bottom: rem(12);
+        border-bottom: var(--border);
+        cursor: pointer;
+    }
+
+    &__title {
+        @include text-arrow;
+
+        &::after {
+            position: absolute;
+            right: rem(3);
+            bottom: 50%;
+        }
+    }
+
+    &__content {
+        position: relative;
+        overflow: hidden;
+        max-height: 0;
+        transition: 0.5s;
+        margin-top: rem(13);
+    }
+}

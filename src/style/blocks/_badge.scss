@@ -1,0 +1,18 @@
+@use '../helpers' as *;
+
+.badge {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    padding: rem(2) rem(10);
+    border-radius: rem(16);
+    background-color: rgba(255, 255, 255, 0.3);
+    color: var(--color-light);
+    font-weight: 500;
+    transition-duration: var(--transition-duration);
+
+    @include hover {
+        opacity: 0.5;
+    }
+}

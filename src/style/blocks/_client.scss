@@ -4,25 +4,62 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: rem(20);
+
+    @include laptop {
+        flex-direction: column;
+        align-items: start;
+    }
 
     &__content {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: rem(280);
-        column-gap: rem(18);
     }
 
     &__images {
         @include square(rem(50));
 
         display: flex;
-        column-gap: rem(-70);
     }
 
     &__img {
         &:not(:first-child) {
-            margin-left: -11px;
+            margin-left: rem(-11);
+        }
+    }
+
+    &__text {
+        font-size: rem(16);
+        color: var(--color-gray-light);
+        
+        span {
+            position: relative;
+            color: var(--color-light);
+            font-weight: 600;
+
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                background-image: url('/image/line.svg');
+                background-repeat: no-repeat;
+                width: rem(48);
+                height: rem(8);
+            }
+        }
+    }
+
+    &__video-wrapper {
+        @include laptop {
+            margin-bottom: rem(20);
+        }
+
+        @include tablet {
+            position: absolute;
+            transform: translateY(140%); 
         }
     }
 }

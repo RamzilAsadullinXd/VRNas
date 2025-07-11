@@ -1,0 +1,36 @@
+@use '../helpers' as *;
+
+.articles {
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        row-gap: fluid(72, 40);
+        padding-bottom: fluid(150, 100);
+
+        @include tablet {
+            align-items: center;
+        }
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        column-gap: rem(30);
+    }
+
+    &__button {
+        width: rem(140);
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+
+        @include laptop {
+            flex-direction: column;
+            row-gap: rem(32);
+        }
+    }
+
+}

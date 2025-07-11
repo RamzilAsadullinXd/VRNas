@@ -21,3 +21,32 @@
         display: none !important;
     }
 }
+
+.subtitle {
+    font-size: rem(16);
+    font-weight: 300;
+}
+
+.description {
+    color: var(--color-gray-dark);
+}
+
+.text {
+    font-size: rem(16);
+}
+
+.headline {
+    font-size: rem(28);
+    font-weight: 600;
+}
+
+.gradient-text {
+    display: block;
+    width: fit-content;
+    font-size: rem(16);
+    font-weight: 500;
+    letter-spacing: rem(2.24);
+    background-image:  var(--color-accent);
+    background-clip: text;
+    color: transparent;
+}

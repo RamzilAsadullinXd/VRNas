@@ -1,20 +1,11 @@
 @use '../helpers' as *;
 
 .select {
+    @include text-arrow;
+    @include flex-center(true);
+
+
     position: relative;
-    display: inline-flex;
-    padding: rem(12);
-    cursor: pointer;
-
-    &::after {
-        content: '>';
-        transform: rotate(90deg);
-        transition-duration: var(--transition-duration);
-    }
-
-    &:has(.is-active)::after {
-        transform: rotate(-90deg);
-    }
 
     &__list {
         position: absolute;

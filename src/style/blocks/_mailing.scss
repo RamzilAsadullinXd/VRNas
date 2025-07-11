@@ -1,0 +1,71 @@
+@use '../helpers' as *;
+
+.mailing {
+    &__inner {
+        padding-bottom: fluid(64, 92);
+    }
+
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: rem(8);
+        background: var(--color-accent);
+        border-radius: rem(5);
+        padding-block: rem(38) rem(31);
+        padding-inline: rem(74);
+
+        @include laptop {
+            flex-direction: column;
+            padding-block: rem(31);
+            padding-inline: rem(13);
+        }
+    }
+
+    &__title {
+        max-width: rem(520);
+
+        @include laptop {
+            text-align: center;
+        }
+    }
+
+    &__email {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: rem(365);
+        padding: rem(4);
+        padding-left: rem(14);
+        background: rgba(255, 255, 255, 0.07);
+        border-radius: rem(2);
+    }
+    
+    &__data-entry {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        column-gap: rem(8);
+    }
+
+    &__input {
+        min-width: rem(200);
+        background: transparent;
+        border: none;
+        color: var(--color-light);
+        font-size: rem(16);
+
+        &::placeholder {
+            color: var(--color-light);
+        }
+    }
+
+    &__button {
+        display: flex;
+        flex-shrink: 0;
+        background: rgba(255, 255, 255, 0.21);
+        padding: rem(17);
+        border: none;
+    }
+    
+}

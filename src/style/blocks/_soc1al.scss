@@ -1,0 +1,24 @@
+@use '../helpers' as *;
+
+.soc1al {
+    @include square(rem(42));
+
+    width: rem(42);
+    height: rem(42);
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: var(--color-dark);
+    border: rem(1) solid var(--color-blue);
+    transition-duration: var(--transition-duration);
+
+    @include hover {
+        background-color: var(--color-blue);
+    }
+
+    &__img {
+        @include square(rem(19));
+    }
+}

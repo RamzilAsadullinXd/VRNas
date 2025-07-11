@@ -3,7 +3,7 @@
 $desktop: 1200.98;
 $laptop: 1028.98;
 $tablet: 768.98;
-$mobile: 480.98;
+$mobile: 520.98;
 
 @mixin desktop-above {
     @media (width > rem($desktop)) {

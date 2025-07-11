@@ -1,0 +1,40 @@
+@use '../helpers' as *;
+
+.arrow {
+    @include square(rem(40));
+    @include border-gradient;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    transition-duration: var(--transition-duration);
+
+    img {
+        position: relative;
+        z-index: 2;
+    }
+
+    &--big {
+        @include square(rem(50));
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--color-accent);
+        opacity: 0;
+        transition: opacity var(--transition-duration) ease-in-out;
+    }
+
+    @include hover {
+        &::before {
+            opacity: 1;
+        }
+    }
+}

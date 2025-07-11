@@ -1,0 +1,58 @@
+@use '../helpers' as *;
+
+.about {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: rem(65);
+        padding-bottom: fluid(150, 105);
+
+        @include laptop {
+            flex-direction: column;
+        }
+    }
+
+    &__image {
+        @include bg-gradient(365, 609);
+        @include bg-blue-image;
+
+        @include tablet {
+            &::after {
+                width: rem(274);
+                height: rem(457);
+            }
+        }
+
+        &::before {
+            left: fluid(-24, 0);
+            bottom: 0;
+        }
+    }
+
+    &__video-wrapper {
+        position: absolute;
+        bottom: rem(-25);
+        right: fluid(32, 0);
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(12);
+        max-width: rem(562);
+
+        @include laptop {
+            max-width: rem(800);
+        }
+    }
+
+    &__opportunities {
+        margin-top: rem(12);
+        margin-bottom: rem(20);
+    }
+
+    &__button {
+        width: rem(168);
+    }
+}

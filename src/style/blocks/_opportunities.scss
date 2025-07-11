@@ -1,0 +1,13 @@
+@use '../helpers' as *;
+
+.opportunities {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(14);
+    }
+    &__item {
+        display: flex;
+        column-gap: rem(12);
+    }
+}

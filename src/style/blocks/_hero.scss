@@ -1,10 +1,45 @@
 @use '../helpers' as *;
 
 .hero {
+    &__inner {
+        position: relative;
+        padding-top: rem(50);
+
+        &::before {
+            background-image: url(/image/bg/2.png);
+            content: '';
+            position: absolute;
+            right: rem(400);
+            bottom: rem(-170);
+            width: rem(2682);
+            height: rem(721);
+            z-index: -10;
+        }
+
+        @include laptop {
+            &::before {
+                bottom: 0;
+            }
+        }
+
+        @include tablet {
+            &::before {
+                right: rem(-400);
+                bottom: rem(100);
+            }
+        }
+    }
+
     &__main {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        column-gap: rem(10);
+
+        @include tablet {
+            flex-direction: column;
+            align-items: start;
+        }
     }
 
     &__content {
@@ -19,8 +54,21 @@
     }
 
     &__subtitle {
-        margin-top: rem(12);
-        margin-bottom: rem(32);
+        margin-block: var(--padding-block-y) rem(32);
     }
 
+    &__img-wrapper {
+        @include bg-gradient(354, 422);
+        align-self: end;
+
+        @include tablet {
+            width: rem(354);
+            height: rem(422);
+            margin-right: rem(-115);
+        }
+    }
+
+    &__advantages {
+        padding-bottom: fluid(120, 100);
+    }
 }

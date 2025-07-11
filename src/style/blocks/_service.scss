@@ -1,0 +1,36 @@
+@use '../helpers' as *;
+
+.service {
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        row-gap: fluid(46, 24);
+        padding-bottom: fluid(150, 100);
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        row-gap: rem(12);
+
+        @include laptop {
+            flex-direction: column;
+        }
+    }
+
+    &__subtitle {
+        @include bg-gradient(454, 199);
+
+        max-width: rem(625);
+
+        &::after {
+            left: 100%;   
+        }
+
+        @include tablet {
+            &::after {
+                display: none;
+            }
+        }
+    }
+}

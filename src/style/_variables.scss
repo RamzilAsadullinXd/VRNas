@@ -22,8 +22,9 @@
 
     --container-width: #{rem(1200)};
     --container-padding-x: #{rem(16)};
+    --padding-block-y: #{rem(12)};
 
-    --border: #{rem(1)} solid #FFFFFF59;
+    --border: #{rem(1)} solid rgba(255, 255, 255, 0.3);
 
     --transition-duration: 0.2s;
 }

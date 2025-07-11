@@ -1,0 +1,26 @@
+@use '../helpers' as *;
+
+.advantages {
+    &__list {
+        @include border-light;
+
+        background-color: var(--color-dark-blue);
+        display: flex;
+        justify-content: space-between;
+        padding-inline: rem(64);
+        padding-block: rem(42) rem(53);
+        gap: rem(50);
+
+        @include laptop {
+            padding: rem(36);
+        }
+
+        @include tablet {
+            flex-direction: column;
+        }
+    }
+
+    &__title {
+        margin-block: rem(42) var(--padding-block-y);
+    }
+}
