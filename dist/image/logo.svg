@@ -1,0 +1,20 @@
+<svg width="101.000000" height="30.000000" viewBox="0 0 101 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip7_1903">
+			<rect id="Logo" rx="0.000000" width="37.000000" height="29.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<linearGradient x1="42.000000" y1="13.500000" x2="103.999985" y2="20.500000" id="paint_linear_21_12729_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#FFFFFF"/>
+			<stop offset="1.000000" stop-color="#FFFFFF" stop-opacity="0.000000"/>
+		</linearGradient>
+	</defs>
+	<rect id="Logo" rx="0.000000" width="37.000000" height="29.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip7_1903)">
+		<path id="Vector" d="M12.53 1.53L28.56 1.53L16.78 19.2L0.76 19.2L12.53 1.53Z" fill="#19B5F1" fill-opacity="1.000000" fill-rule="nonzero"/>
+		<path id="Vector" d="M13.24 20.84L8.67 27.69L25.46 27.69L37.24 10.02L24.85 10.02L17.63 20.84L13.24 20.84Z" fill="#CA6AEB" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+	<path id="VRNas" d="M42 7L44.62 7L48.66 19.84L48.71 19.84L52.75 7L64.68 7L66.91 9.35L66.91 14.26L65.32 15.93L67 17.83L67 23L64.46 23L64.46 18.47L62.89 16.66L57.9 16.66L57.9 23L55.37 23L55.37 7.02L49.95 23L47.42 23L42 7ZM70.41 7L68.09 7L68.09 23L70.52 23L70.52 11.38L70.56 11.38L77.78 23L80.1 23L80.1 7L77.67 7L77.67 18.63L77.63 18.63L70.41 7ZM57.9 14.47L63.54 14.47L64.42 13.55L64.42 10.15L63.54 9.24L57.9 9.24L57.9 14.47ZM80.87 20.96L80.87 18.26L82.82 16.25L88.44 16.25L88.44 14.56L87.63 13.71L84.19 13.71L83.39 14.56L83.39 15.29L80.96 15.29L80.96 13.97L83.19 11.61L88.63 11.61L90.86 13.97L90.86 23L88.61 23L88.61 21.24L86.86 23L82.82 23L80.87 20.96ZM91.2 19.48L91.2 20.87L93.21 23L99.01 23L101 20.91L101 18.29L99.03 16.21L94.35 16.21L93.71 15.54L93.71 14.4L94.33 13.74L97.74 13.74L98.35 14.4L98.35 15.13L100.78 15.13L100.78 13.74L98.76 11.61L93.28 11.61L91.29 13.69L91.29 16.25L93.23 18.31L97.93 18.31L98.57 18.97L98.57 20.21L97.96 20.87L94.24 20.87L93.63 20.21L93.63 19.48L91.2 19.48ZM86.62 20.96L88.44 19.13L88.44 18.17L84 18.17L83.3 18.88L83.3 20.28L83.95 20.96L86.62 20.96Z" fill="url(#paint_linear_21_12729_0)" fill-opacity="1.000000" fill-rule="evenodd"/>
+</svg>
