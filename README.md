@@ -1,40 +1,41 @@
 # 📌VrNas
 
-One-page website about VR company made on HTML, CSS, JavaScript, Vite technologies.
-The website is fully adaptive and interactive.
+One-page website for a fictional VR company.  
+Built with HTML, SCSS, JavaScript and Vite. The website is fully responsive and includes interactive elements like 
 
 ## 🔗DEMO
 
-👉[VrNas](https://ramzilasadullinxd.github.io/VRNas/)
+👉[View Live Website](https://ramzilasadullinxd.github.io/VRNas/)
 
 ## 🛠️Technology
 
 - HTML5  
 - SCSS (Flexbox/Grid, adaptability and 
 file structure)  
-- JavaScript (если есть интерактивность)  
-- [Vite](https://vitejs.dev/)
+- JS (video player, slider, accordion)  
+- Vite (for development and build)
 
 ## 📷 Screenshot
 
-![VrNas](./readme.png)
+![VrNas Screenshot](./readme.png)
 
 ## 🚀 Features
 
 - Cross-browser layout
 - Mobile adaptation
 - simple js logic: video, slider, accordion and the like
+- Clean and modular SCSS architecture
 
 ## 📁 Installation and launch
 
 If you want to run it locally:
 
 - git clone https://github.com/RamzilAsadullinXd/VRNas
+- cd VRNas
 - npm i
 - npm dev
 
 ## 👤 Аfter
 - Developer: Ramzil Asadullin
-- Contacts:
-  - telegram "@AsadullinRamzil"
-  - Gmail "asadullinramzil0@gmail.com"
+- telegram "@AsadullinRamzil"
+- Gmail "asadullinramzil0@gmail.com"
