@@ -34,5 +34,7 @@ If you want to run it locally:
 - npm dev
 
 ## 👤 Аfter
-Developer: Ramzil Asadullin
-Contacts: telegram "@AsadullinRamzil" and Gmail "asadullinramzil0@gmail.com"
+- Developer: Ramzil Asadullin
+- Contacts:
+  - telegram "@AsadullinRamzil"
+  - Gmail "asadullinramzil0@gmail.com"
