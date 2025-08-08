@@ -1,7 +1,7 @@
 # 📌VrNas
 
 One-page website for a fictional VR company.  
-Built with HTML, SCSS, JavaScript and Vite. The website is fully responsive and includes interactive elements like 
+Built with HTML, SCSS, JavaScript and Vite. The website is fully responsive and includes interactive
 
 ## 🔗DEMO
 
